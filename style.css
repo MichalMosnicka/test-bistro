@@ -1,268 +1,261 @@
-{\rtf1\ansi\ansicpg1250\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+/* Reset stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-\f0\fs24 \cf0 /* Reset styl\uc0\u367  */\
-* \{\
-    margin: 0;\
-    padding: 0;\
-    box-sizing: border-box;\
-\}\
-\
-html \{\
-    scroll-behavior: smooth;\
-\}\
-\
-body \{\
-    font-family: 'Poppins', sans-serif;\
-    color: #333;\
-    line-height: 1.6;\
-    background-color: #fdfdfd;\
-\}\
-\
-.container \{\
-    width: 85%;\
-    max-width: 1200px;\
-    margin: auto;\
-    padding: 80px 0;\
-\}\
-\
-h2 \{\
-    font-size: 2.5rem;\
-    text-align: center;\
-    margin-bottom: 10px;\
-    color: #222;\
-    text-transform: uppercase;\
-    letter-spacing: 1px;\
-\}\
-\
-.section-subtitle \{\
-    text-align: center;\
-    color: #777;\
-    margin-bottom: 50px;\
-    font-size: 1.1rem;\
-\}\
-\
-/* Navigace */\
-header \{\
-    background: #222;\
-    color: #fff;\
-    position: fixed;\
-    width: 100%;\
-    top: 0;\
-    z-index: 1000;\
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);\
-\}\
-\
-.navbar \{\
-    display: flex;\
-    justify-content: space-between;\
-    align-items: center;\
-    padding: 20px 8%;\
-\}\
-\
-.logo \{\
-    font-size: 1.6rem;\
-    font-weight: 700;\
-    letter-spacing: 1px;\
-\}\
-\
-.logo span \{\
-    color: #ff9f1c;\
-\}\
-\
-.nav-links \{\
-    list-style: none;\
-    display: flex;\
-\}\
-\
-.nav-links li \{\
-    margin-left: 25px;\
-\}\
-\
-.nav-links a \{\
-    color: #fff;\
-    text-decoration: none;\
-    font-weight: 600;\
-    font-size: 1rem;\
-    transition: color 0.3s;\
-\}\
-\
-.nav-links a:hover \{\
-    color: #ff9f1c;\
-\}\
-\
-/* \'davodn\'ed sekce (Hero) */\
-.hero \{\
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;\
-    height: 85vh;\
-    display: flex;\
-    justify-content: center;\
-    align-items: center;\
-    text-align: center;\
-    color: #fff;\
-    padding-top: 80px;\
-\}\
-\
-.hero-content h1 \{\
-    font-size: 3.5rem;\
-    margin-bottom: 20px;\
-    font-weight: 700;\
-    max-width: 800px;\
-\}\
-\
-.hero-content p \{\
-    font-size: 1.3rem;\
-    margin-bottom: 40px;\
-    font-weight: 300;\
-\}\
-\
-.btn \{\
-    background: #ff9f1c;\
-    color: #fff;\
-    padding: 14px 35px;\
-    text-decoration: none;\
-    font-weight: 600;\
-    border-radius: 30px;\
-    transition: background 0.3s, transform 0.2s;\
-    display: inline-block;\
-\}\
-\
-.btn:hover \{\
-    background: #e08515;\
-    transform: translateY(-2px);\
-\}\
-\
-/* J\'eddeln\'ed l\'edstek */\
-.menu-section \{\
-    background: #fff;\
-\}\
-\
-.menu-grid \{\
-    display: grid;\
-    grid-template-columns: 1fr 1fr;\
-    gap: 30px;\
-\}\
-\
-.menu-item \{\
-    display: flex;\
-    justify-content: space-between;\
-    align-items: flex-start;\
-    padding: 20px;\
-    background: #fdfdfd;\
-    border-radius: 8px;\
-    border-bottom: 2px solid #f1f1f1;\
-    transition: border-color 0.3s;\
-\}\
-\
-.menu-item:hover \{\
-    border-color: #ff9f1c;\
-\}\
-\
-.menu-details h3 \{\
-    font-size: 1.3rem;\
-    color: #222;\
-    margin-bottom: 5px;\
-\}\
-\
-.menu-details p \{\
-    color: #666;\
-    font-size: 0.95rem;\
-\}\
-\
-.price \{\
-    font-weight: 700;\
-    color: #ff9f1c;\
-    font-size: 1.2rem;\
-    white-space: nowrap;\
-    margin-left: 20px;\
-\}\
-\
-/* O n\'e1s */\
-.about-section \{\
-    background: #f8f9fa;\
-    text-align: center;\
-\}\
-\
-.about-section p \{\
-    max-width: 800px;\
-    margin: auto;\
-    font-size: 1.15rem;\
-    color: #555;\
-    line-height: 1.8;\
-\}\
-\
-/* Kontakt */\
-.contact-section \{\
-    background: #fff;\
-\}\
-\
-.contact-grid \{\
-    display: grid;\
-    grid-template-columns: 1fr 1fr;\
-    gap: 50px;\
-    margin-top: 20px;\
-\}\
-\
-.contact-info h3 \{\
-    font-size: 1.4rem;\
-    margin-bottom: 15px;\
-    color: #222;\
-\}\
-\
-.contact-info p \{\
-    margin-bottom: 10px;\
-    font-size: 1.05rem;\
-\}\
-\
-.contact-info a \{\
-    color: #ff9f1c;\
-    text-decoration: none;\
-    font-weight: 600;\
-\}\
-\
-/* Pati\uc0\u269 ka */\
-footer \{\
-    background: #222;\
-    color: #aaa;\
-    text-align: center;\
-    padding: 25px 0;\
-    font-size: 0.9rem;\
-    border-top: 1px solid #333;\
-\}\
-\
-/* Responzivn\'ed design (pro mobily a tablety) */\
-@media (max-width: 992px) \{\
-    .menu-grid \{\
-        grid-template-columns: 1fr;\
-    \}\
-\}\
-\
-@media (max-width: 768px) \{\
-    .navbar \{\
-        flex-direction: column;\
-        padding: 15px;\
-    \}\
-    .nav-links \{\
-        margin-top: 15px;\
-    \}\
-    .nav-links li \{\
-        margin: 0 10px;\
-    \}\
-    .hero-content h1 \{\
-        font-size: 2.2rem;\
-    \}\
-    .hero-content p \{\
-        font-size: 1.1rem;\
-    \}\
-    .contact-grid \{\
-        grid-template-columns: 1fr;\
-        gap: 30px;\
-    \}\
-    .container \{\
-        padding: 50px 0;\
-    \}\
-\}}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* Navigace */
+header {
+    background: #222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff9f1c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9f1c;
+}
+
+/* Úvodní sekce (Hero) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    max-width: 800px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.btn {
+    background: #ff9f1c;
+    color: #fff;
+    padding: 14px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e08515;
+    transform: translateY(-2px);
+}
+
+/* Jídelní lístek */
+.menu-section {
+    background: #fff;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: #fdfdfd;
+    border-radius: 8px;
+    border-bottom: 2px solid #f1f1f1;
+    transition: border-color 0.3s;
+}
+
+.menu-item:hover {
+    border-color: #ff9f1c;
+}
+
+.menu-details h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.menu-details p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.price {
+    font-weight: 700;
+    color: #ff9f1c;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+/* O nás */
+.about-section {
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Kontakt */
+.contact-section {
+    background: #fff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.contact-info a {
+    color: #ff9f1c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Patička */
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+/* Responzivní design (pro mobily a tablety) */
+@media (max-width: 992px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links {
+        margin-top: 15px;
+    }
+    .nav-links li {
+        margin: 0 10px;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .container {
+        padding: 50px 0;
+    }
+}
