@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bistro Neveklov — Premium Experience</title>
+    <title>Bistro Neveklov — Svačiny, hotovky a jídlo s sebou</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,86 +11,103 @@
 </head>
 <body>
 
+    <!-- Navigace -->
     <header>
         <nav class="navbar">
             <div class="logo">BISTRO <span>NEVEKLOV</span></div>
             <ul class="nav-links">
                 <li><a href="#domu">Úvod</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#o-nas">O nás</a></li>
+                <li><a href="#menu">Nabídka</a></li>
+                <li><a href="#o-nas">Náš příběh</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Úvodní sekce -->
     <section id="domu" class="hero">
         <div class="hero-content">
-            <span class="hero-badge">Gourmet Concept</span>
-            <h1>Jedinečná chuť v každém detailu</h1>
-            <p>Výběrová káva, ranní rituály a řemeslná gastronomie v srdci Neveklova.</p>
-            <a href="#menu" class="btn-premium">Objevte naši nabídku</a>
+            <span class="hero-badge">Malé rodinné bistro provozované srdcem</span>
+            <h1>Poctivé svačiny i teplé jídlo domů</h1>
+            <p>Posaďte se u nás, nebo si vezměte jídlo s sebou zavařené v krabičce. Vaříme pro školáky, pracující i celou rodinu.</p>
+            <a href="#menu" class="btn-premium">Prohlédnout nabídku</a>
         </div>
     </section>
 
+    <!-- Menu sekce -->
     <section id="menu" class="menu-section">
         <div class="container">
-            <span class="section-tag">Menu</span>
-            <h2>Naše Kulinářská Nabídka</h2>
+            <span class="section-tag">Dnes i každý den</span>
+            <h2>Naše Nabídka</h2>
             <div class="gold-divider"></div>
             
             <div class="menu-grid">
+                <!-- 1. Školní svačiny -->
                 <div class="menu-item">
                     <div class="menu-header">
-                        <h3>Snídaňové Menu</h3>
+                        <h3>Svačiny pro středoškoláky</h3>
                         <div class="line-filler"></div>
-                        <span class="price">od 65 Kč</span>
                     </div>
-                    <p>Čerstvě pečené řemeslné pečivo, selekce sýrů, vajíčka z volného chovu a domácí pomazánky.</p>
+                    <p>Čerstvé, chutné a hlavně levné obložené housky, rohlíky a chleby. Ideální ranní zastávka cestou do školy.</p>
                 </div>
                 
+                <!-- 2. Chlebíčky -->
                 <div class="menu-item">
                     <div class="menu-header">
-                        <h3>Denní Obědové Menu</h3>
+                        <h3>Čerstvé Chlebíčky</h3>
                         <div class="line-filler"></div>
-                        <span class="price">od 120 Kč</span>
                     </div>
-                    <p>Moderní interpretace tradičních pokrmů připravovaná z lokálních surovin nejvyšší kvality.</p>
+                    <p>Poctivá klasika z čerstvých lahůdkářských surovin. Skvělé k snídani, svačině nebo na objednávku pro vaše oslavy.</p>
                 </div>
                 
+                <!-- 3. Polotovary domů -->
                 <div class="menu-item">
                     <div class="menu-header">
-                        <h3>Výběrová Káva & Espresso</h3>
+                        <h3>Polotovary s sebou (Ušetřete čas)</h3>
                         <div class="line-filler"></div>
-                        <span class="price">od 45 Kč</span>
                     </div>
-                    <p>100% single-origin arabika, precizně připravená našimi baristy pro dokonalý zážitek.</p>
+                    <p>Smažené řízky, domácí sekaná a další dobroty. Odnesete si je od nás připravené, doma jen ohřejete, doděláte rychlou přílohu a máte skvělé jídlo bez námahy.</p>
                 </div>
 
+                <!-- 4. Stálá jídla -->
                 <div class="menu-item">
                     <div class="menu-header">
-                        <h3>Artisan Dezerty</h3>
+                        <h3>Stálá jídla & Rychlé občerstvení</h3>
                         <div class="line-filler"></div>
-                        <span class="price">od 50 Kč</span>
                     </div>
-                    <p>Exkluzivní autorské dezerty a dorty, pečené denně přímo v našem zázemí.</p>
+                    <p>Oblíbené klasiky na počkání nebo na tácek: smažený sýr v housce, křupavé hranolky, párek v rohlíku a další rychlovky.</p>
+                </div>
+            </div>
+
+            <!-- Box o balení a denním menu -->
+            <div style="margin-top: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px;" class="info-boxes-grid">
+                <div style="background: #faf9f6; padding: 30px; border-radius: 4px; border: 1px solid #e0dad0; text-align: center;">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 10px; color: #111;">Denní obědové menu</h4>
+                    <p style="font-size: 0.9rem; color: #555;">Každý den pro vás vaříme čerstvé polévky a hlavní jídla, která denně obměňujeme. Aktuální denní menu najdete na naší tabuli přímo v bistru.</p>
+                </div>
+                <div style="background: #faf9f6; padding: 30px; border-radius: 4px; border: 1px solid #e0dad0; text-align: center;">
+                    <h4 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 10px; color: #111;">Jídlo s sebou v krabičce</h4>
+                    <p style="font-size: 0.9rem; color: #555;">Nemáte čas sedět u nás? Žádný problém. Všechna jídla vám rádi bezpečně **zavaříme do krabičky**, takže si je pohodlně a bez nehod donesete domů nebo do kanceláře.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- O nás -->
     <section id="o-nas" class="about-section">
         <div class="container">
             <span class="section-tag" style="color: #aaa;">Náš Příběh</span>
-            <h2 style="color: #fff;">Příběh o vášni k jídlu</h2>
+            <h2 style="color: #fff;">Děláme to srdcem</h2>
             <div class="gold-divider"></div>
-            <p>Bistro Neveklov vzniklo z lásky k poctivé gastronomii a touhy přinést na neveklovské náměstí prvotřídní kulinářský zážitek. Spojujeme moderní technologické postupy s tradiční úctou k surovinám. Každý den píšeme příběh chuti, u kterého nesmíte chybět.</p>
+            <p>Jsme malé rodinné bistro na neveklovském náměstí. Naše práce je pro nás vším a největší odměnou je vidět vracející se studenty, kterým chutná naše svačina, nebo sousedy, kterým usnadňujeme každodenní vaření. Zakládáme si na poctivých porcích, přátelské atmosféře a dostupných cenách pro každého.</p>
         </div>
     </section>
 
+    <!-- Kontakt -->
     <section id="kontakt" class="contact-section">
         <div class="container">
             <span class="section-tag">Kde nás najdete</span>
-            <h2>Rezervace & Kontakt</h2>
+            <h2>Otevírací doba & Adresa</h2>
             <div class="gold-divider"></div>
             
             <div class="contact-grid">
@@ -116,8 +133,9 @@
         </div>
     </section>
 
+    <!-- Patička -->
     <footer>
-        <p>© 2026 BISTRO NEVEKLOV. Všechna práva vyhrazena. Designed for Premium Experience.</p>
+        <p>© 2026 BISTRO NEVEKLOV. Všechna práva vyhrazena.</p>
     </footer>
 
 </body>
