@@ -3,118 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bistro Neveklov</title>
+    <title>Bistro Neveklov — Premium Experience</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Moderní písmo z Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigační lišta -->
     <header>
         <nav class="navbar">
-            <div class="logo">Bistro <span>Neveklov</span></div>
+            <div class="logo">BISTRO <span>NEVEKLOV</span></div>
             <ul class="nav-links">
-                <li><a href="#domu">Domů</a></li>
-                <li><a href="#menu">Nabídka</a></li>
+                <li><a href="#domu">Úvod</a></li>
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="#o-nas">O nás</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Úvodní sekce (Hero) -->
     <section id="domu" class="hero">
         <div class="hero-content">
-            <h1>Čerstvé a chutné občerstvení v srdci Neveklova</h1>
-            <p>Zastavte se u nás na skvělou kávu, rychlou snídani nebo poctivý oběd.</p>
-            <a href="#menu" class="btn">Prohlédnout nabídku</a>
+            <span class="hero-badge">Gourmet Concept</span>
+            <h1>Jedinečná chuť v každém detailu</h1>
+            <p>Výběrová káva, ranní rituály a řemeslná gastronomie v srdci Neveklova.</p>
+            <a href="#menu" class="btn-premium">Objevte naši nabídku</a>
         </div>
     </section>
 
-    <!-- Sekce Jídelní lístek -->
     <section id="menu" class="menu-section">
         <div class="container">
-            <h2>Naše Nabídka</h2>
-            <p class="section-subtitle">Každý den pro vás připravujeme čerstvé dobroty</p>
+            <span class="section-tag">Menu</span>
+            <h2>Naše Kulinářská Nabídka</h2>
+            <div class="gold-divider"></div>
             
             <div class="menu-grid">
-                <!-- Položka 1 -->
                 <div class="menu-item">
-                    <div class="menu-details">
-                        <h3>Snídaňové menu</h3>
-                        <p>Čerstvé obložené bagety, vajíčka na různé způsoby a křupavé pečivo.</p>
+                    <div class="menu-header">
+                        <h3>Snídaňové Menu</h3>
+                        <div class="line-filler"></div>
+                        <span class="price">od 65 Kč</span>
                     </div>
-                    <span class="price">od 65 Kč</span>
+                    <p>Čerstvě pečené řemeslné pečivo, selekce sýrů, vajíčka z volného chovu a domácí pomazánky.</p>
                 </div>
                 
-                <!-- Položka 2 -->
                 <div class="menu-item">
-                    <div class="menu-details">
-                        <h3>Denní obědová nabídka</h3>
-                        <p>Poctivá teplá jídla, polévky a rychlé občerstvení z čerstvých surovin.</p>
+                    <div class="menu-header">
+                        <h3>Denní Obědové Menu</h3>
+                        <div class="line-filler"></div>
+                        <span class="price">od 120 Kč</span>
                     </div>
-                    <span class="price">od 120 Kč</span>
+                    <p>Moderní interpretace tradičních pokrmů připravovaná z lokálních surovin nejvyšší kvality.</p>
                 </div>
                 
-                <!-- Položka 3 -->
                 <div class="menu-item">
-                    <div class="menu-details">
-                        <h3>Káva & Espresso</h3>
-                        <p>Voňavé espresso, cappuccino, latte macchiato z kvalitních kávových zrn.</p>
+                    <div class="menu-header">
+                        <h3>Výběrová Káva & Espresso</h3>
+                        <div class="line-filler"></div>
+                        <span class="price">od 45 Kč</span>
                     </div>
-                    <span class="price">od 45 Kč</span>
+                    <p>100% single-origin arabika, precizně připravená našimi baristy pro dokonalý zážitek.</p>
                 </div>
 
-                <!-- Položka 4 -->
                 <div class="menu-item">
-                    <div class="menu-details">
-                        <h3>Domácí dezerty</h3>
-                        <p>Výběr sladkých koláčů, dortů a zákusků přímo k vaší kávě.</p>
+                    <div class="menu-header">
+                        <h3>Artisan Dezerty</h3>
+                        <div class="line-filler"></div>
+                        <span class="price">od 50 Kč</span>
                     </div>
-                    <span class="price">od 50 Kč</span>
+                    <p>Exkluzivní autorské dezerty a dorty, pečené denně přímo v našem zázemí.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sekce O nás -->
     <section id="o-nas" class="about-section">
         <div class="container">
-            <h2>O našem bistru</h2>
-            <p>Jsme rodinné bistro na náměstí v Neveklově. Naším cílem je nabízet zákazníkům rychlé, ale přitom kvalitní a poctivé občerstvení. Ať už spěcháte do práce a potřebujete rychlou snídani, nebo hledáte místo pro chutný oběd v příjemném prostředí, u nás jste vždy vítáni.</p>
+            <span class="section-tag" style="color: #aaa;">Náš Příběh</span>
+            <h2 style="color: #fff;">Příběh o vášni k jídlu</h2>
+            <div class="gold-divider"></div>
+            <p>Bistro Neveklov vzniklo z lásky k poctivé gastronomii a touhy přinést na neveklovské náměstí prvotřídní kulinářský zážitek. Spojujeme moderní technologické postupy s tradiční úctou k surovinám. Každý den píšeme příběh chuti, u kterého nesmíte chybět.</p>
         </div>
     </section>
 
-    <!-- Sekce Kontakt -->
     <section id="kontakt" class="contact-section">
         <div class="container">
-            <h2>Kde nás najdete?</h2>
+            <span class="section-tag">Kde nás najdete</span>
+            <h2>Rezervace & Kontakt</h2>
+            <div class="gold-divider"></div>
             
             <div class="contact-grid">
-                <!-- Textové info -->
                 <div class="contact-info">
-                    <h3>Kontakt & Otevírací doba</h3>
-                    <p><strong>Adresa:</strong> náměstí Jana Heřmana 83, 257 56 Neveklov</p>
-                    <p><strong>E-mail:</strong> <a href="mailto:bistro.neveklov@atlas.cz">bistro.neveklov@atlas.cz</a></p>
-                    
-                    <h3 style="margin-top: 25px;">Otevírací doba</h3>
-                    <p>Pondělí – Neděle: <strong>8:00 – 15:00</strong></p>
+                    <div class="info-block">
+                        <h3>Adresa</h3>
+                        <p>Náměstí Jana Heřmana 83<br>257 56 Neveklov</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Otevírací doba</h3>
+                        <p>Pondělí — Neděle<br><strong>08:00 – 15:00</strong></p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Kontakt</h3>
+                        <p>E-mail: <a href="mailto:bistro.neveklov@atlas.cz">bistro.neveklov@atlas.cz</a></p>
+                    </div>
                 </div>
                 
-                <!-- Mapa -->
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.4646736237077!2d14.5323204!3d49.7547621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b991da97f3b89%3A0xe54d4b3c072b2dd3!2sn%C3%A1m.%20Jana%20He%C5%99mana%2083%2C%20257%2056%20Neveklov!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.4646736237077!2d14.5323204!3d49.7547621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b991da97f3b89%3A0xe54d4b3c072b2dd3!2sn%C3%A1m.%20Jana%20He%C5%99mana%2083%2C%20257%2056%20Neveklov!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz" width="100%" height="350" style="border:0; filter: grayscale(1) contrast(1.2);" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Patička -->
     <footer>
-        <p>&copy; 2026 Bistro Neveklov. Všechna práva vyhrazena.</p>
+        <p>© 2026 BISTRO NEVEKLOV. Všechna práva vyhrazena. Designed for Premium Experience.</p>
     </footer>
 
 </body>
