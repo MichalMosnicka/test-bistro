@@ -1,7 +1,9 @@
 /* ===================================================
-   PREMIUM & LUXURY RESPONSIVE STYLE — BISTRO NEVEKLOV
+   PREMIUM & RESPONSIVE STYLE — BISTRO NEVEKLOV
+   (Vzhled se zlatými detaily a tmavými prvky)
    =================================================== */
 
+/* Základní nastavení */
 * {
     margin: 0;
     padding: 0;
@@ -160,7 +162,7 @@ header {
     color: #111;
 }
 
-/* Čisté a drahé Menu rozvržení */
+/* Čisté a přehledné Menu rozvržení */
 .menu-section {
     background-color: #fff;
 }
@@ -193,13 +195,6 @@ header {
     flex-grow: 1;
     border-bottom: 1px dotted #e0dad0;
     margin: 0 15px;
-}
-
-.price {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #c5a880;
 }
 
 .menu-item p {
@@ -268,7 +263,7 @@ header {
     border-bottom: 1px solid #c5a880;
 }
 
-/* Luxusní zašedlá mapa */
+/* Luxusní mapa */
 .contact-map iframe {
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -287,9 +282,10 @@ footer {
 
 /* ===================================================
    PLNÁ MOBILNÍ RESPONZIVITA (PC, TABLET, MOBIL)
+   (Kód, který přizpůsobí web displeji telefonu)
    =================================================== */
 
-/* Pro menší monitory a tablety */
+/* Pro menší monitory a tablety na šířku */
 @media (max-width: 1024px) {
     .container {
         padding: 80px 0;
@@ -323,8 +319,13 @@ footer {
         width: 90%;
     }
     .menu-grid, .contact-grid {
-        grid-template-columns: 1fr; /* Na mobilu se vše seřadí pod sebe */
+        grid-template-columns: 1fr; /* Na mobilu se seřadí pod sebe */
         gap: 40px;
+    }
+    /* Úprava informačních boxů na mobilu */
+    .menu-section .container > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
     }
     h2 {
         font-size: 2rem;
@@ -344,14 +345,18 @@ footer {
     .nav-links li {
         margin: 0 7px;
     }
-    .menu-header {
-        flex-direction: column;
-        align-items: flex-start;
+    .logo {
+        font-size: 1.2rem;
     }
+    .hero-badge {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    /* Skryje tečkovanou čáru na velmi malém displeji */
     .line-filler {
-        display: none; /* Skryje tečky na mobilu, aby byla cena pod nadpisem */
-    }
-    .price {
-        margin-top: 5px;
+        display: none; 
     }
 }
